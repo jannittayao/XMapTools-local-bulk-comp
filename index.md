@@ -1,8 +1,6 @@
-## Welcome to GitHub Pages
+## Finding a local bulk composition with XMapTools
 
-You can use the [editor on GitHub](https://github.com/jannittayao/XMapTools-local-bulk-comp/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
-
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+Written with measurements taken from the 
 
 ### Markdown
 
