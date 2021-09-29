@@ -1,6 +1,14 @@
 ## Finding a local bulk composition with XMapTools
 
-Written with measurements taken from the 
+Written with measurements taken from the ___ microprobe from the American Museum of Natural History 
+
+This tutorial uses the following files: 
+
+- `Classification.txt`
+- `Standards.txt`
+- etc 
+
+Files can be found on the [XMapTools home page](https://www.xmaptools.com/additional-tools-files/) but are also in the Github repository that this page is hosted on for your convenience.
 
 ### Markdown
 
