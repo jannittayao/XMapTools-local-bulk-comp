@@ -1,14 +1,23 @@
 ## Finding a local bulk composition with XMapTools
 
-Written with measurements taken from the ___ microprobe from the American Museum of Natural History 
+This tutorial uses the following files in addition to the element maps and traverse data: 
 
-This tutorial uses the following files: 
-
+- `map.py`
+	-   Python script to clean element map data. Specifically formatted for CAMECA microprobe output. 
 - `Classification.txt`
+	- fdsfa
 - `Standards.txt`
-- etc 
+	- fjsdklaf
+-   `XMapToolsCoordinatesTool.xls`
+	- fdjsaf
+- `standards_cleaned.xls`
+	- fdsafjkl
+- 
 
-Files can be found on the [XMapTools home page](https://www.xmaptools.com/additional-tools-files/) but are also in the Github repository that this page is hosted on for your convenience.
+
+The `Classification.txt	`,`Standards.txt`, `XMapToolsCoordinatesTool.xls`, and `standards_cleaned.xls` files can be found on the [XMapTools home page](https://www.xmaptools.com/additional-tools-files/) but are also in the [Github](https://github.com/jannittayao/XMapTools-local-bulk-comp) repository that this page is hosted on for your convenience.
+
+
 
 ### Markdown
 
