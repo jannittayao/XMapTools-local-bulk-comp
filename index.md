@@ -1,27 +1,64 @@
 ## Finding a local bulk composition with XMapTools
 
+### Background
+
+This tutorial is written in order to ____
+
 This tutorial uses the following files in addition to the element maps and traverse data: 
 
 - `map.py`
-	-   Python script to clean element map data. Specifically formatted for CAMECA microprobe output. 
+	-   Python script to clean element map data. Specifically formatted for CAMECA microprobe output. Script reads in element map text file and returns another text file with the header and left-most column removed. 
+	-   Run script in the command line with the command `python <map.py file path> <raw element map file path>`.
 - `Classification.txt`
-	- fdsfa
-- `Standards.txt`
-	- fjsdklaf
+	- Modified from Standards file on [XMapTools resources](https://www.xmaptools.com/additional-tools-files/). 
+	- Includes space to add mineral densities. Make sure that the density data is in the same order as the list of minerals from >1. Density data from [WebMineral](http://www.webmineral.com/)
 -   `XMapToolsCoordinatesTool.xls`
-	- fdjsaf
-- `standards_cleaned.xls`
-	- fdsafjkl
-- 
+	- Excel spreadsheet to calculate image coordinates from the center point coordinates. From [XMapTools resources](https://www.xmaptools.com/additional-tools-files/).
+- `standards_cleaned.txt`
+	- Text file contains image coordinates calculated by `XMapToolsCoordinatesTool.xls` and traverse data. From [XMapTools resources](https://www.xmaptools.com/additional-tools-files/).
 
 
-The `Classification.txt	`,`Standards.txt`, `XMapToolsCoordinatesTool.xls`, and `standards_cleaned.xls` files can be found on the [XMapTools home page](https://www.xmaptools.com/additional-tools-files/) but are also in the [Github](https://github.com/jannittayao/XMapTools-local-bulk-comp) repository that this page is hosted on for your convenience.
+The `Classification.txt	`,`Standards.txt`, `XMapToolsCoordinatesTool.xls`, and `standards_cleaned.txt` files can be found on the [XMapTools home page](https://www.xmaptools.com/additional-tools-files/) but are also in the [Github](https://github.com/jannittayao/XMapTools-local-bulk-comp) repository that this page is hosted on for your convenience.
 
 
+### Step 1. Process and Import Element Maps
 
-### Markdown
+**1.0 Optional:** Use `map.py` to clean raw element map data. 
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+
+![Import map screenshot](Images/import-map.png) 
+
+**1.1** Use the Import Map button to import all of the cleaned .txt files. All element maps need to have the file name `<element>.txt` where `<element>` is one of the available element names: Na, Mg, Al, Si, P, S, Cl, K, Ca, Ti, V, Cr, Mn, Fe, Co, Ni, Cu,
+Zn, Zr, Ag, Cd, Sn, Ce, As, Sb, Cs, La, Nd, Pb, Sr, Th, U, Yt (which is ytterbium and not the "Y" coordinate), Sm, Gd, Dy, Pr. 
+
+Edit `XMapToolsSetupDirectory/Program/Dev/Xmap_Default.txt` to add elements to the default element names. For more information on accepted map file formats and names, refer to **Section 2.7.3 Map Files** in the [XMapTools User Guide](https://www.xmaptools.com/XMapTools.3.4_UserGuide.pdf). 😎
+
+![Apply corrections screenshot](Images/apply-corrections.png) 
+
+**1.2** Hit the 'Apply Corrections' button in the Import Tool window that pops up. 
+
+![Element drop-down menu](Images/element-dropdown.png) 
+
+
+**1.3** After all of the maps have been imported and corrected, you can toggle between the different element maps in the drop-down menu. 
+
+
+### Step 2. Classify Minerals
+
+Next, classify the main minerals identified in the composition maps. There are two main ways of classifying 
+
+![Element drop-down menu](Images/classify-options.png) 
+
+
+### Step 3. Import Standards
+
+Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+
+### Step 4. Standardize Minerals
+
+### Step 5. Generate Density Map 
+
+### Step 6. Export Local Bulk Composition
 
 ```markdown
 Syntax highlighted code block
@@ -41,12 +78,4 @@ Syntax highlighted code block
 [Link](url) and ![Image](src)
 ```
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
 
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/jannittayao/XMapTools-local-bulk-comp/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
