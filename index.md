@@ -11,7 +11,7 @@ This tutorial uses the following files in addition to the element maps and trave
 	-   Run script in the command line with the command `python <map.py file path> <raw element map file path>`.
 - `Classification.txt`
 	- Modified from Standards file on [XMapTools resources](https://www.xmaptools.com/additional-tools-files/). 
-	- Includes space to add mineral densities. Make sure that the density data is in the same order as the list of minerals from >1. Density data from [WebMineral](http://www.webmineral.com/)
+	- Includes space to add mineral densities. Make sure that the density data is in the same order as the list of minerals from `>1`. Density data from [WebMineral](http://www.webmineral.com/).
 -   `XMapToolsCoordinatesTool.xls`
 	- Excel spreadsheet to calculate image coordinates from the center point coordinates. From [XMapTools resources](https://www.xmaptools.com/additional-tools-files/).
 - `standards_cleaned.txt`
@@ -25,29 +25,41 @@ The `Classification.txt	`,`Standards.txt`, `XMapToolsCoordinatesTool.xls`, and `
 
 **1.0 Optional:** Use `map.py` to clean raw element map data. 
 
-
-![Import map screenshot](Images/import-map.png) 
-
 **1.1** Use the Import Map button to import all of the cleaned .txt files. All element maps need to have the file name `<element>.txt` where `<element>` is one of the available element names: Na, Mg, Al, Si, P, S, Cl, K, Ca, Ti, V, Cr, Mn, Fe, Co, Ni, Cu,
 Zn, Zr, Ag, Cd, Sn, Ce, As, Sb, Cs, La, Nd, Pb, Sr, Th, U, Yt (which is ytterbium and not the "Y" coordinate), Sm, Gd, Dy, Pr. 
 
+![Import map screenshot](Images/import-map.png) 
+
 Edit `XMapToolsSetupDirectory/Program/Dev/Xmap_Default.txt` to add elements to the default element names. For more information on accepted map file formats and names, refer to **Section 2.7.3 Map Files** in the [XMapTools User Guide](https://www.xmaptools.com/XMapTools.3.4_UserGuide.pdf). 😎
+
+**1.2** Hit the 'Apply Corrections' button in the Import Tool window that pops up. 
 
 ![Apply corrections screenshot](Images/apply-corrections.png) 
 
-**1.2** Hit the 'Apply Corrections' button in the Import Tool window that pops up. 
+**1.3** After all of the maps have been imported and corrected, you can toggle between the different element maps in the drop-down menu. 
 
 ![Element drop-down menu](Images/element-dropdown.png) 
 
 
-**1.3** After all of the maps have been imported and corrected, you can toggle between the different element maps in the drop-down menu. 
-
-
 ### Step 2. Classify Minerals
 
-Next, classify the main minerals identified in the composition maps. There are two main ways of classifying 
+Next, classify the main minerals identified in the composition maps. There are two main ways of classifying minerals: by file and by selection. Both work well for our purposes, but XMapTools can be buggy and crash at odd times, so the file option might be best for unexpected crashes. 
 
 ![Element drop-down menu](Images/classify-options.png) 
+
+#### Classifying by file
+
+To classify minerals by file, download and edit the `Classification.txt` file. Under `>1`, include identified minerals and approximate coordinates for a point in each mineral (X/Y coordinates of each point can be found on the left side bar). Under `>2`, include the densities of the minerals in the **same order** as the list in `>1`. 
+
+![Coordinates](Images/coordinates.png) 
+
+After selecting the File option, select the edited `Classification.txt` to load the classifications. 
+
+#### Classifying by selection 
+
+To classify minerals by selection, first choose the maps used for classification. Then, use the selected maps to help select minerals 
+
+![Classification by selection](Images/classification-selection.png) 
 
 
 ### Step 3. Import Standards
