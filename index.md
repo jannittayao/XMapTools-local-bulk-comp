@@ -57,16 +57,28 @@ After selecting the File option, select the edited `Classification.txt` to load 
 
 #### Classifying by selection 
 
-To classify minerals by selection, first choose the maps used for classification. Then, use the selected maps to help select minerals 
+To classify minerals by selection, left-click on your preferred element map to select all of the identified minerals, then right-click to generate a classified mineral map. 
 
 ![Classification by selection](Images/classification-selection.png) 
 
+Rename the minerals after generating the classified mineral map. 
 
 ### Step 3. Import Standards
 
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+The next step is to import standards for spot analyses to allow XMapTools to perform analytical standardization and transform each phase's x-ray map into maps of weight percent oxide concentration.
+
+**3.1** Change and edit the 
+
+- perform spot analyses 
+- change and edit the standards file 
+- standardize the x-ray map intensities to oxide composition
+- Import standards button 
+- display the spot analyses with the Display/Hide standards button 
+- For more information on how the spot analyses work refer to **Section 3.8.5 Internal Standards (spot analyses)** on the XMapTools User Guide.
 
 ### Step 4. Standardize Minerals
+
+- 
 
 ### Step 5. Generate Density Map 
 

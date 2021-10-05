@@ -1,0 +1,36 @@
+                   ########################################
+                   # XMAPTOOLS V1.6 MASK-COORDINATES File #
+                   ########################################
+
+%-------------------------------N-O-T-I-C-E-------------------------------------
+In this file you can store the mask names and the corresponding coordinates
+for the pixels used as input compositions (see details regarding the mask
+function in Lanari et al. 2014). This 1.6.5 new functions allows to save
+time when you want to try to calculate many masks with different functions,
+but using the same input compositions.
+
+When you execute the 'compute mask' function, select 'from a file' in the
+'input pixels' menu. Then select this file using the opening tool window.
+
+-> Coordinates can be obtained in XMapTools using the two displays in the
+   right panel.
+
+-> Each line should have three variables (Name, X and Y) delimited by space
+   or tabulations...
+%--------------------------------------------------------------------------------
+
+
+
+>1 Put below the list of | Mask Name | X | Y | ...
+grt       145 510
+plg        190 572
+bt        223  652
+AlSi       300 588
+Ilm   647 590
+
+>2 density of phases taken from webmineral (same order as >1)
+3570
+2680
+3090
+3240
+4720
