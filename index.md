@@ -10,15 +10,15 @@ This tutorial uses the following files in addition to the element maps and trave
 	-   Python script to clean element map data. Specifically formatted for CAMECA microprobe output. Script reads in element map text file and returns another text file with the header and left-most column removed. 
 	-   Run script in the command line with the command `python <map.py file path> <raw element map file path>`.
 - `Classification.txt`
-	- Modified from Standards file on [XMapTools resources](https://www.xmaptools.com/additional-tools-files/). 
+	- Modified from Classification file on [XMapTools resources](https://www.xmaptools.com/additional-tools-files/). 
 	- Includes space to add mineral densities. Make sure that the density data is in the same order as the list of minerals from `>1`. Density data from [WebMineral](http://www.webmineral.com/).
 -   `XMapToolsCoordinatesTool.xls`
-	- Excel spreadsheet to calculate image coordinates from the center point coordinates. From [XMapTools resources](https://www.xmaptools.com/additional-tools-files/).
-- `standards_cleaned.txt`
-	- Text file contains image coordinates calculated by `XMapToolsCoordinatesTool.xls` and traverse data. From [XMapTools resources](https://www.xmaptools.com/additional-tools-files/).
+	- Excel spreadsheet to calculate image coordinates from the center point coordinates. Modified from [XMapTools resources](https://www.xmaptools.com/additional-tools-files/).
+- `Standards.txt`
+	- Text file contains image coordinates calculated by `XMapToolsCoordinatesTool.xls` and traverse data. Modified from Standards file on [XMapTools resources](https://www.xmaptools.com/additional-tools-files/).
 
 
-The `Classification.txt	`,`Standards.txt`, `XMapToolsCoordinatesTool.xls`, and `standards_cleaned.txt` files can be found on the [XMapTools home page](https://www.xmaptools.com/additional-tools-files/) but are also in the [Github](https://github.com/jannittayao/XMapTools-local-bulk-comp) repository that this page is hosted on for your convenience.
+The `map.py`, `Classification.txt`, `XMapToolsCoordinatesTool.xls`, and `Standards.txt` files can be found on the [XMapTools home page](https://www.xmaptools.com/additional-tools-files/) but are also in the [Github](https://github.com/jannittayao/XMapTools-local-bulk-comp) repository that this page is hosted on for your convenience.
 
 
 ### Step 1. Process and Import Element Maps
