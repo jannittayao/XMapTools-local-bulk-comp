@@ -29,16 +29,16 @@ The `map.py`, `Classification.txt`, `XMapToolsCoordinatesTool.xls`, and `Standar
 
 ### Step 1. Process and Import Element Maps
 
-**1.0 Optional:** Use `map.py` to clean raw element map data. 
+**1.0 [Optional]:** Use `map.py` to clean raw element map data. 
 
 **1.1** Use the Import Map button to import all of the cleaned .txt files. All element maps need to have the file name `<element>.txt` where `<element>` is one of the available element names: Na, Mg, Al, Si, P, S, Cl, K, Ca, Ti, V, Cr, Mn, Fe, Co, Ni, Cu,
 Zn, Zr, Ag, Cd, Sn, Ce, As, Sb, Cs, La, Nd, Pb, Sr, Th, U, Yt (which is ytterbium and not the "Y" coordinate), Sm, Gd, Dy, Pr. 
 
 ![Import map screenshot](Images/import-map.png) 
 
-Edit `XMapToolsSetupDirectory/Program/Dev/Xmap_Default.txt` to add elements to the default element names. For more information on accepted map file formats and names, refer to **Section 2.7.3 Map Files** in the [XMapTools User Guide](https://www.xmaptools.com/XMapTools.3.4_UserGuide.pdf). 😎
+Edit `XMapToolsSetupDirectory/Program/Dev/Xmap_Default.txt` to add elements to the default element names. For more information on accepted map file formats and names, refer to **Section 2.7.3 Map Files** in the [XMapTools User Guide](https://www.xmaptools.com/XMapTools.3.4_UserGuide.pdf). 
 
-**1.2** Hit the 'Apply Corrections' button in the Import Tool window that pops up. 
+**1.2** For each imported map, hit the 'Apply Corrections' button in the Import Tool window that pops up. 
 
 ![Apply corrections screenshot](Images/apply-corrections.png) 
 
@@ -55,7 +55,7 @@ Next, classify the main minerals identified in the composition maps. There are t
 
 #### Classifying by file
 
-To classify minerals by file, download and edit the `Classification.txt` file. Under `>1`, include identified minerals and approximate coordinates for a point in each mineral (X/Y coordinates of each point can be found on the left side bar). Under `>2`, include the densities of the minerals in the **same order** as the list in `>1`. 
+To classify minerals by file, download and edit the `Classification.txt` file. Under `>1`, include identified minerals and approximate coordinates for a point in each mineral (X/Y coordinates of each point can be found on the left side bar in XMapTools). Under `>2`, include the densities of the minerals in the **same order** as the list in `>1`. Densities can be found from [WebMineral](http://www.webmineral.com/).
 
 ![Coordinates](Images/coordinates.png) 
 
@@ -71,7 +71,7 @@ Rename the minerals after generating the classified mineral map.
 
 ### Step 3. Import Standards
 
-The next step is to import standards for spot analyses to allow XMapTools to perform analytical standardization and transform each phase's x-ray map into maps of weight percent oxide concentration. For our purposes, spot analyses represent garnet transects in our thin section.
+The next step is to import standards for spot analyses to allow XMapTools to perform analytical standardization and to transform each phase's x-ray map into maps of weight percent oxide concentration. For our purposes, spot analyses represent garnet transects in our thin section.
 
 **3.1** Download and edit `XMapToolsCoordinatesTool.xls` to find image coordinates based on the microprobe used. 
 
@@ -83,7 +83,7 @@ The next step is to import standards for spot analyses to allow XMapTools to per
 
 **3.4** Once the standards are imported, display the traverse spot analyses with the Display/Hide standards button. 
 
-For more information on how the spot analyses work refer to **Section 3.8.5 Internal Standards (spot analyses)** on the XMapTools User Guide.
+For more information on how the spot analyses work refer to **Section 3.8.5 Internal Standards (spot analyses)** on the [XMapTools User Guide](https://www.xmaptools.com/XMapTools.3.4_UserGuide.pdf).
 
 
 ### Step 4. Standardize Minerals
@@ -98,7 +98,7 @@ After importing the spot analysis data, standardize each mineral based on the st
 
 ![Calibrate Elements](Images/calibrate.png) 
 
-Refer to Section _____ for more information on _________
+For more information on standardization refer to **Section 3.8.6 Standardization** on the [XMapTools User Guide](https://www.xmaptools.com/XMapTools.3.4_UserGuide.pdf).
 
 ### Step 5. Generate Density Map
 
