@@ -1,4 +1,4 @@
-## Click [here]([https://jannittayao.github.io/madplotter3-tutorial/](https://jannittayao.github.io/XMapTools-local-bulk-comp/]) to view the Github pages of this tutorial
+## Click [here](https://jannittayao.github.io/XMapTools-local-bulk-comp/) to view the Github pages of this tutorial
 
 Contact ac114@wellesley.edu or jyao@wellesley.edu for comments on the tutorial.
 
